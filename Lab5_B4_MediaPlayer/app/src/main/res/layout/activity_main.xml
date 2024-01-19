@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="@dimen/text_medium" android:gravity="center_horizontal">
+    <TextView android:id="@+id/musicName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Is There Someone Else?" android:textAllCaps="true" android:textColor="#000" android:textSize="18sp" android:textStyle="bold" android:layout_marginTop="20dp"/>
+    <TextView android:id="@+id/singerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The Weeknd" android:textColor="#000" android:textSize="18sp" android:layout_marginBottom="20dp"/>
+    <ImageView android:id="@+id/disk" android:layout_width="250dp" android:layout_height="250dp" android:src="@drawable/ic_disk"/>
+    <SeekBar android:id="@+id/seekBarTime" android:layout_width="300dp" android:layout_height="wrap_content" android:backgroundTint="#000" android:progress="40" android:progressTint="#000" android:layout_marginTop="30dp"/>
+    <RelativeLayout android:layout_width="300dp" android:layout_height="wrap_content">
+        <TextView android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#000" android:text="00:00"/>
+        <TextView android:id="@+id/tvDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#000" android:text="00:00" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <Button android:id="@+id/btnPlay" android:layout_marginTop="30dp" android:layout_width="36dp" android:layout_height="36dp" android:background="@drawable/ic_play"/>
+    <Button android:id="@+id/btnPause" android:layout_marginTop="30dp" android:layout_width="36dp" android:layout_height="36dp" android:background="@drawable/ic_pause"/>
+    <LinearLayout android:layout_width="350dp" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:orientation="horizontal">
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_low_volume"/>
+        <SeekBar android:id="@+id/seekBarVolume" android:layout_width="300dp" android:layout_height="wrap_content" android:backgroundTint="#000" android:progressTint="#000" android:thumbTint="#000"/>
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_volume"/>
+    </LinearLayout>
+</LinearLayout>
